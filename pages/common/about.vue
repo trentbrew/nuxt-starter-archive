@@ -1,7 +1,5 @@
 <template>
   <main class="flex flex-col justify-center items-center gap-[24px]">
-    <div class="text-center">
-      <h1 class="text-[36px]">Dashboard</h1>
-    </div>
+      <h1 class="text-[36px]">About</h1>
   </main>
 </template>
