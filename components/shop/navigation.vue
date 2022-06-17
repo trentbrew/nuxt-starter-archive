@@ -1,6 +1,10 @@
 <script setup>
 import axios from 'axios';
 
+const state = reactive({
+  cart: []
+});
+
 function createCheckoutSession() {
   axios.post('http://localhost:8000/create-checkout-session', {
     items: [ // items to purchase
@@ -16,16 +20,14 @@ function createCheckoutSession() {
 }
 
 function getSubtotal() {
-  axios.post('http://localhost:8000/get-subtotal', {
+  return axios.post('http://localhost:8000/get-subtotal', {
     items: [ // items to purchase
       { id: 2, quantity: 3 }, // 3 hats
       { id: 4, quantity: 1 }, // 1 pair of shoes
     ]
-  }).then((res) => {
-    console.log('response from the server: ', res.data);
-  }).catch((err) => {
-    console.log('error from the server: ', err);
-  });
+  })
+  .then((res) => res.data)
+  .catch((err) => console.log('error from the server: ', err));
 }
 </script>
 
@@ -45,7 +47,7 @@ function getSubtotal() {
           <div tabindex="0" class="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
             <div class="card-body">
               <span class="font-bold text-lg">8 Items</span>
-              <span class="text-info">Subtotal: $999</span>
+              <span class="text-info">Subtotal: <span>{{  }}</span></span>
               <div class="card-actions">
                 <button class="btn btn-primary btn-block">Checkout</button>
               </div>
