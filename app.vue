@@ -1,7 +1,7 @@
 <script setup>
 useHead({
   title: 'Nuxt Starter',
-  htmlAttrs: { 'data-theme': 'dark' },
+  htmlAttrs: { 'data-theme': 'cupcake' },
 });
 const route = useRoute();
 </script>
