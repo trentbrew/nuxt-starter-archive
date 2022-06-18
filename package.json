@@ -15,8 +15,10 @@
   },
   "dependencies": {
     "@nuxtjs/supabase": "^0.1.17",
+    "@pinia/nuxt": "^0.1.9",
     "@stripe/stripe-js": "^1.31.0",
     "axios": "^0.27.2",
-    "daisyui": "^2.15.4"
+    "daisyui": "^2.15.4",
+    "pinia": "^2.0.14"
   }
 }
