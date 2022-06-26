@@ -11,14 +11,13 @@
     "@nuxtjs/tailwindcss": "^5.1.2",
     "autoprefixer": "^10.4.7",
     "nuxt": "3.0.0-rc.4",
-    "postcss": "^8.4.14"
+    "postcss": "^8.4.14",
+    "vitest": "^0.15.1"
   },
   "dependencies": {
-    "@nuxtjs/supabase": "^0.1.17",
     "@pinia/nuxt": "^0.1.9",
-    "@stripe/stripe-js": "^1.31.0",
-    "axios": "^0.27.2",
     "daisyui": "^2.15.4",
+    "firebase-admin": "^11.0.0",
     "pinia": "^2.0.14"
   }
 }

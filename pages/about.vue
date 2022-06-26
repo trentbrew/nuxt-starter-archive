@@ -1,5 +1,5 @@
 <template>
   <main class="flex flex-col justify-center items-center">
-    Welcome
+    About
   </main>
 </template>
