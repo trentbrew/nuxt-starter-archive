@@ -1,5 +1,5 @@
 <template>
-  <Html data-theme="dark">
+  <Html data-theme="business">
     <Head><Title>Nuxt App</Title></Head>
     <div class="app h-screen flex flex-col bg-base-200 p-[24px]">
       <Navigation />
